@@ -1,0 +1,32 @@
+>>> from geom import Point
+>>> point1 = Point(10, 20)
+>>> print(point1)
+x: 10.000000
+y: 20.000000
+rho: 22.360680
+theta: 1.107149
+
+>>> point2 = Point(17, 0)
+>>> print(point2)
+x: 17.000000
+y: 0.000000
+rho: 17.000000
+theta: 0.000000
+
+>>> point1.distance(point2)
+21.18962010041709
+
+>>> point3 = Point(15, 17)
+>>> print(point3)
+x: 15.000000
+y: 17.000000
+rho: 22.671568
+theta: 0.847817
+
+>>> import math
+>>> point3.centre_rotate(math.pi/3)
+>>> print(point3)
+x: -7.222432
+y: 21.490381
+rho: 22.671568
+theta: 1.895015
