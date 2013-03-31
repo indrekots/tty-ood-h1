@@ -15,7 +15,9 @@ public class Point {
 		this.y = y;
 	}
 	
-	//TODO: implement toString
+	public String toString() {
+		return String.format("x: %f\ny: %f\nrho: %f\ntheta: %f", getX(), getY(), rho(), theta());
+	}
 	
 	public double getX() {
 		return x;
